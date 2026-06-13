@@ -1,0 +1,723 @@
+* {
+   margin: 0px;
+   padding: 0px;
+   scroll-behavior: smooth;
+}
+
+/* body */
+body {
+   background-color: #e69999;
+   
+}
+
+/* NAVBAR CSS */
+
+#navbar {
+   display: flex;
+   background-color: #e69999;
+   /* background-color: transparent; */
+   opacity: 0.9;
+  
+   position: absolute;
+ /* position: sticky; */
+   width: 100%;
+   top: 0px;
+   height: 79px;
+   z-index: 1;
+}
+nav ul {
+   display: flex;
+   padding: 10px;
+   
+}
+
+nav ul li {
+   list-style: none;
+   padding: 15px;
+   margin: 0px 10px;
+   align-self: center;
+}
+nav ul li a {
+   padding: 20px;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul li a:hover {
+   background-color: rgb(144, 142, 142);
+   color: #fafafa;
+   border-radius: 30px;
+}
+/*  LOGO IN NAVBAR */
+nav img {
+   width: 75px;
+   padding: 5px;
+   margin-top: 6px;
+   margin-right: 20px;
+   border-radius: 50%;
+}
+#menu-toggle {
+   display: none;
+   font-size: 50px;
+   color: #fafafa;
+   padding: 30px;
+   margin-left: 20px;
+}
+#menu {
+   display: none;
+   left: 0;
+   background-color: #e69999;
+   position: absolute;
+   color: white;
+   top: 80px;
+   width: 100%;
+}
+#menu ul {
+   display: none;
+   flex-direction: column;
+}
+/* HOME CSS */
+
+#home {
+   height: 590px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   /* border: 2px solid red; */
+   color: white;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: url('../img/bg1.jpg');
+   /* background: url('../img/bg1.jpg'); */
+   /* position: relative; */
+}
+
+#home::before {
+   content: "";
+   height: 100%;
+   width: 100%;
+   top: 0px;
+   position: absolute;
+   z-index: -1;
+}
+
+video {
+   flex-direction: row;
+   margin: 20px 25px;
+   /* margin-top: 40px; */
+   /* border: 2px solid red; */
+   width: 300px;
+   border-radius: 20px;
+   transition: all;
+   box-shadow: 3px 3px 3px black;
+}
+
+video:hover {
+   transform: scale(1.1);
+}
+
+h1 {
+   /* padding: px; */
+   margin-top: 75px;
+   margin-bottom: 25px;
+}
+
+p {
+   padding: 5px;
+}
+
+.btn {
+   padding: 8px 19px;
+   margin: 25px;
+   background-color: #e69999;
+   border-radius: 20px;
+   border: none;
+   transition: all;
+   font-weight: bold;
+   font-size: 15px;
+   box-shadow: 3px 3px 3px black;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.btn:hover {
+   transform: scale(1.3);
+}
+
+/* Services css */
+
+
+#service {
+   display: flex;
+   justify-content: center;
+   /* border: 2px solid red; */
+   margin-bottom: -40px;
+}
+
+#Servicesh1 {
+   text-align: center;
+   font-size: 30px;
+   font-weight: bold;
+   margin-top: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   /* border: 2px solid red; */
+   width: 350px;
+   margin: 5px 29px;
+   /* border-radius: 25px; */
+   border-top-left-radius: 30px;
+   border-top-right-radius: 30px;
+   background-color: #c3c3c3;
+}
+
+.box img {
+   width: 150px;
+   border-radius: 20px;
+   margin: 12px;
+
+}
+
+.box h2 {
+   margin: 12px;
+   font-size: 25px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.box p {
+   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     */
+   text-align: justify;
+}
+
+/* CLIENT CSS */
+
+.clients {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   height: 270px;
+
+}
+
+#client-section {
+   position: relative;
+margin-bottom: -40px;
+}
+
+#client-section::before {
+   content: "";
+   background: url("../img/clientbg.avif");
+   background-repeat: repeat-x;
+   height: 100%;
+   width: 100%;
+   top: 0px;
+   position: absolute;
+   z-index: -1;
+}
+
+.clienth1 {
+   text-align: center;
+   font-size: 30px;
+   margin: 20px;
+   color: white;
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.clients img {
+   margin-top: 50px;
+   width: 130px;
+
+}
+
+/* CONTACT US CSS */
+
+#Contactus {
+   position: relative;
+   /* border: 2px solid red; */
+
+}
+
+.contact-us {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   margin: -5px 59px;
+
+}
+
+#Contactus::before {
+   content: "";
+   background: url('../img/bg4.jpg');
+   position: absolute;
+   background-repeat: repeat-x;
+   height: 104%;
+   width: 100%;
+   top: -35px;
+   z-index: -1;
+}
+
+.contacth1 {
+   text-align: left;
+   font-size: 30px;
+   margin: 0px 30px;
+   color: white;
+   font-weight: bold;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+
+   color: black;
+   font-size: 17px;
+   font-weight: bold;
+   margin: 0px -3%;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+textarea {
+   width: 165px;
+   height: 40px;
+}
+
+/* footer css */
+#footer {
+   padding: 10px;
+   background-color: black;
+   color: white;
+   font: 20px;
+   font-weight: bold;
+   margin-top: -19px;
+   text-align: center;
+}
+
+/*         RESPONSIVE FOR PHONE          */
+
+/*  for below 480 fram  */
+@media (max-width: 480px) {
+
+   /*  NAVBAR */
+   #navbar {
+      display: flex;
+      justify-content: space-between;
+    
+      position: absolute;
+     
+      
+      width: 0px;
+   }
+   nav ul li#a {
+      display: none;
+   }
+   nav ul li img {
+      margin-left: -25px;
+      margin-top: 25px;
+      width: 90px;
+   }
+   #menu-toggle {
+      display: block;
+      font-size: 50px;
+      color: #fafafa;
+      margin-top: -12px;  
+   }
+   /* #menu, */
+   #menu{
+      width: 230px;
+      left: 145px;
+      top: 75px;
+      margin-top: -1px;
+   }
+   #menu ul {
+      display: block;
+  
+      /* height: 400px; */
+      
+   }
+
+   #menu ul a {
+      color: white;
+   }
+
+   /* HOME */
+
+   #home::before {
+      content: "";
+      height: 50%;
+
+   }
+
+   h1 {
+      margin-top: 65px;
+      margin-bottom: 15px;
+      font-size: 20px
+   }
+
+   p {
+      padding: 5px;
+      text-align: center;
+      font-size: 12px;
+
+   }
+
+   video {
+      display: none;
+   }
+
+   video#fire-vedio {
+      display: block;
+      margin-top: 15px;
+      width: 150px;
+      position: relative;
+   }
+
+    #Services-container{
+      height: 500px;
+      margin-top: 64px;
+      margin-bottom: -102px;
+   } 
+   
+   #service {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   #Servicesh1 {
+      font-size: 20px;
+      margin-top: -43px;
+      margin-bottom: 32px;
+   }
+
+   .box {
+      width: 320px;
+      height: 115px;
+   }
+
+   .box img {
+      width: 70px;
+      margin-bottom: 0px;
+      margin-top: 2px;
+      font-weight: bolder;
+
+   }
+
+   .box h2 {
+      margin: 0px;
+      font-size: 13px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   .box p {
+      text-align: justify;
+      font-size: 10px;
+
+   }
+
+   /*  CLIENT  */
+   #client-section {
+      height: 350px;
+      margin-bottom: -65px;
+   }
+
+   .clients {
+      /* flex-wrap: wrap; */
+      display: grid;
+      grid-template-columns: 100px 100px;
+      /* height: 320px;
+      height: 250px; */
+      row-gap: 1fr;
+
+   }
+
+   #client-section::before {
+      height: 100%;
+      width: 100%;
+
+   }
+
+   #client-section h1 {
+      font-size: 25px;
+      padding-top: 15px;
+      padding-bottom: 0px;
+      color: white;
+
+   }
+
+   .clients img {
+      padding: 0px;
+      margin-top: -40px;
+      margin-bottom: 20px;
+      width: 80px;
+
+
+   }
+
+   /* Contact us */
+   /* #Contactus{
+
+} */
+   .contact-us {
+
+      margin: -7px 100px;
+
+
+   }
+
+   #Contactus::before {
+
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+   }
+
+   .contacth1 {
+
+      text-align: center;
+      font-size: 20px;
+
+   }
+
+   label {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 0px 0%;
+
+
+   }
+
+   textarea {
+      width: 250px;
+      height: 70px;
+   }
+
+   /*  footer */
+   #footer {
+
+      font: 18px;
+      font-weight: bold;
+      margin-top: -19px;
+      text-align: center;
+   }
+}
+
+@media only screen and (min-width:481px) and (max-width:1058px) {
+   /* NAVBAR */
+
+   #navbar {
+      display: flex;
+      background-color: #e69999;
+      position: absolute;
+      top: 0px;
+      height: 75px;
+      width: 99.99%;
+      z-index: 1;
+   }
+
+   nav ul {
+      display: flex;
+      padding: 10px;
+   }
+
+   nav ul li {
+      list-style: none;
+      padding: 15px;
+      margin: 0px 10px;
+      align-self: center;
+
+   }
+
+   nav ul li a {
+
+      padding: 20px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   nav ul li a:hover {
+      background-color: rgb(144, 142, 142);
+      color: #fafafa;
+      border-radius: 30px;
+   }
+
+   /*  LOGO IN NAVBAR */
+
+   nav img {
+      width: 75px;
+      padding: 5px;
+      margin-top: 6px;
+      margin-right: 20px;
+      border-radius: 50%;
+   }
+
+   /* HOME */
+   #home{
+      height: 500px;
+   }
+   #home::before {
+      content: "";
+      height: 47%;
+
+   }
+
+   h1 {
+      margin-top: 65px;
+      margin-bottom: 15px;
+      font-size: 20px
+   }
+
+   p {
+      padding: 5px;
+      text-align: center;
+      font-size: 12px;
+
+   }
+
+   video {
+      display: none;
+
+
+   }
+
+   video#fire-vedio,#fire-vedio1{
+
+      display: inline-block;
+      margin-top: 15px;
+      width: 210px;
+
+   }
+
+   /*SERVICE  */
+   #Services-container {
+      height: 250px;
+      margin-top:40px;
+   }
+
+   #service {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   #Servicesh1 {
+      font-size: 20px;
+   }
+
+   .box {
+      width: 170px;
+      height: 160px;
+      margin: 10px 19px;
+   }
+
+   .box img {
+      width: 70px;
+      margin-bottom: 0px;
+      margin-top: 2px;
+      font-weight: bolder;
+
+   }
+
+   .box h2 {
+      margin: 0px;
+      font-size: 13px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+
+   .box p {
+      text-align: justify;
+      font-size: 10px;
+
+   }
+
+   /*  Client  */
+
+   #client-section {
+      height: 395px;
+      margin-bottom: -65px;
+   }
+
+   .clients {
+      /* flex-wrap: wrap; */
+      display: grid;
+      grid-template-columns: 100px 100px;
+      row-gap: 1fr;
+
+   }
+
+   #client-section::before {
+      height: 100%;
+      width: 100%;
+
+   }
+
+   #client-section h1 {
+      font-size: 25px;
+      padding-top: 15px;
+      margin-top: 20px;
+      padding-bottom: 0px;
+      color: white;
+
+   }
+
+   .clients img {
+      padding: 0px;
+      margin-top: -40px;
+      margin-bottom: 20px;
+      width: 80px;
+
+
+   }
+
+   /* CONTACT us */
+   .contact-us {
+
+      margin: -7px 100px;
+
+
+   }
+
+   #Contactus::before {
+
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+   }
+
+   .contacth1 {
+
+      text-align: center;
+      font-size: 20px;
+
+   }
+
+   label {
+      font-size: 15px;
+      font-weight: bold;
+      margin: 0px 0%;
+
+
+   }
+
+   textarea {
+      width: 250px;
+      height: 70px;
+   }
+
+
+}

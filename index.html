@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AF_RESTURSNT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <!-- <div id="logo"><img src="img/AF-REsturant.jpg" alt="here a logo!" /></div> -->
+      <ul>
+        <li><img src="img/AF-REsturant.jpg" alt="img/AF-REsturant.jpg" /></li>
+        <li id="a"><a href="#home">Home</a></li>
+        <li id="a"><a href="#Services-container">Services</a></li>
+        <li id="a"><a href="#client-section">Our Clients</a></li>
+        <li id="a"><a href="#Contactus">Contact Us</a></li>
+      </ul>
+      <!-- <button><i id="menu" class='bx bx-menu' ></i></button> -->
+
+      <!-- small frame -->
+      <div id="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#Services-container">Services</a></li>
+          <li><a href="#client-section">Our Clients</a></li>
+          <li><a href="#Contactus">Contact Us</a></li>
+        </ul>
+      </div>
+      <i id="menu-toggle" class="bx bx-menu"></i>
+    </nav>
+    <section id="home">
+      <h1 class="welcomeh1">Welcome to AF Resturant</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore
+        cupiditate iusto deserunt libero delectus. Cumque?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. libero
+        delectus. Cumque?
+      </p>
+      <button class="btn" id="home-btn" onclick="firstlogin()">
+        Order now
+      </button>
+      <div class="video">
+        <video  src="img/vedio/v (1).mp4"id="fire-vedio" controls autoplay loop muted></video>
+        <video
+          src="img/vedio/v (3).mp4"
+          id="fire-vedio2"
+          controls
+          autoplay
+          loop
+          muted
+        ></video>
+        <video src="img/vedio/v (2).mp4" id="fire-vedio1" controls autoplay loop muted></video>
+      </div>
+    </section>
+    <section id="Services-container">
+      <h1 id="Servicesh1">Our Services</h1>
+      <div id="service">
+        <div class="box">
+          <img src="img/food1.jpg" alt="" />
+          <h2 class="food1">Food Ordering</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            repellat enim placeat dolore voluptas quos vel molestias? Quam sit
+            expedita maiores, esse alias numquam ipsam necessitatibus
+            repudiandae sed minus earum?
+          </p>
+        </div>
+        <div class="box">
+          <img src="img/food2.jpg" alt="" />
+          <h2 class="food1">Bulk Ordering</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            repellat enim placeat dolore voluptas quos vel molestias? Quam sit
+            expedita maiores, esse alias numquam ipsam necessitatibus
+            repudiandae sed minus earum?
+          </p>
+        </div>
+        <div class="box">
+          <img src="img/ordering.webp" alt="" />
+          <h2 class="food1">Home Ordering</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            repellat enim placeat dolore voluptas quos vel molestias? Quam sit
+            expedita maiores, esse alias numquam ipsam necessitatibus
+            repudiandae sed minus earum?
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="client-section">
+      <div class="clienth1"><h1>Our Clients</h1></div>
+      <div class="clients">
+        <div class="client-img" id="client1">
+          <img src="img/client1.webp" alt="" />
+        </div>
+        <div class="client-img">
+          <img src="img/client2.png" alt="" />
+        </div>
+        <div class="client-img">
+          <img src="img/clients3.png" alt="" />
+        </div>
+        <div class="client-img">
+          <img src="img/client4.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="Contactus">
+      <div class="contacth1"><h1>Contact Us</h1></div>
+      <form action="">
+        <div class="contact-us">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter Your Name"
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password"
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+          <label for="phoneno">Phone No:</label>
+          <input
+            type="phone"
+            name="phoneno"
+            id="phoneno"
+            placeholder="Enter your phone No"
+          />
+          <label for="order">Place Order :</label>
+          <textarea
+            name="order"
+            id="order"
+            placeholder="place your order"
+          ></textarea>
+          <input
+            type="submit"
+            value="Place Order"
+            class="btn contactbtn"
+            id="placeorder"
+            onclick="placeorder()"
+          />
+        </div>
+      </form>
+    </section>
+    <footer>
+      <div id="footer">Copy Right &copy; AF Resturent</div>
+    </footer>
+
+    <!-- JAVA SCRIPT -->
+    <script>
+      let btn = document.getElementById("home-btn");
+      function firstlogin() {
+        alert("Login first for more!");
+      }
+      let menubtn = document.getElementById("menu-toggle");
+      menubtn.addEventListener("click", function () {
+        let menu = document.getElementById("menu");
+        if (menu.style.display == "none" || menu.style.display === "") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
